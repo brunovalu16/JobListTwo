@@ -11,6 +11,7 @@ import GroupCard from "@components/GroupCard/index";
 
 export default function Groups() {
     const [ groups, setGroups ] = useState<string[]>(['Dia 11', 'Dia 12', 'Dia 13']);
+    const 
 
 
     return (
