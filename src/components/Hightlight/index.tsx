@@ -10,10 +10,10 @@ type Props = {
 };
 
 {/* 01 - _a função recebe as propriedades de Props_*/}
-export default function Group( { titulo, subTitulo }: Props) {
+export default function Group( { titulo, subTitulo, ...rest }: Props) {
     return(
 
-        <View style={styles.container}>
+        <View style={styles.container} {...rest}>
 
         {/* 01 - _o titulo e subtitulo recebem valores dinamicamente_*/}
             <Text style={styles.titulo}> {titulo} </Text>

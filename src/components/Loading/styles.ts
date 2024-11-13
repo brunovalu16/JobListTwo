@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center', // Centraliza verticalmente
       alignItems: 'center',     // Centraliza horizontalmente
-      backgroundColor: theme.COLORS.PURPLE_700, // Cor de fundo (ajuste conforme seu tema)
+      backgroundColor: theme.COLORS.GRAY_700, // Cor de fundo (ajuste conforme seu tema)
     },
   });
   

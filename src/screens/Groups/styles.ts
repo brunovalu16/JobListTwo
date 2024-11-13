@@ -8,10 +8,18 @@ export const styles = StyleSheet.create({
         backgroundColor: theme.COLORS.GRAY_700,
         alignItems: "center",
         justifyContent: "center",
+        
     },
 
     Text: {
         color: theme.COLORS.GRAY_100,
         fontSize: 30,
     },
+
+    flatList: {
+        
+    },
+   
+
+    
 });

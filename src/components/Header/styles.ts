@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
 
     header: {
         flex: 1,
-        top: '20%',
+        top: '35%',
         flexDirection: 'row', // Alinha os elementos na horizontal
         justifyContent: 'space-between', // Ajusta o espaço entre os itens (opcional)
     },
