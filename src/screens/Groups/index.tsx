@@ -1,19 +1,44 @@
-import { Container } from "./styles";
+import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
+import { useState } from 'react';
+import { FlatList } from 'react-native';
 
+
+import { Container } from "./styles";
 import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
 import { GroupCard } from "@components/GroupCards";
+import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 export function Groups() {
+    const [ groups, setGroups ] = useState<string[]>([]);
+
     return(
         <Container>
             <Header showbackButton />
-            <Highlight title="Agendas semanais" subtitle="Escolha sua semana de tarefas"  />
-            <GroupCard title="Semana de 18 a 24/11/2024"/>
+            <Highlight title="Agendas semanais" subtitle="Adicione suas agendas semanais"  />
+            <FlatList
+                data={groups}
+                keyExtractor={item => item}
+                renderItem={({ item }) => (
+                <GroupCard
+                    title={item}
+                />
+             )}
+             contentContainerStyle={groups.length === 0 && { flex: 1}}
+             ListEmptyComponent={() => (
+             <ListEmpty
+                message='Adicione suas tarefas semanais aqui.'
+             />)}
+            />
+            <Button title='Criar nova Agenda' type="PRIMARY" />
         </Container>
     )
 }
+
+
+//'Semana de 25 a 01/12/2024', 'Semana de 25 a 01/12/2024' 
 
 
 
