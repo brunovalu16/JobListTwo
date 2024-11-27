@@ -1,5 +1,4 @@
 import { Container, Logo, BackIcon, BackButton } from "./styles";
-import { Ionicons } from '@expo/vector-icons';
 
 import LogoImg from '@assets/img/Logo-JobList.png'
 

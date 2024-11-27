@@ -22,7 +22,7 @@ export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `;
 
-export const Icon = styled(Ionicons).attrs(({ theme}) => ({
+export const Icon = styled(Ionicons).attrs(({ theme }) => ({
     size: 32,
     color: theme.COLORS.GREEN_700,
     weight: 'fill',

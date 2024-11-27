@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export const Container = styled.View`
     width: 100%;
-
+    
     flex-direction: row;
     align-items: center;
     justify-content: center;
