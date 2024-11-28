@@ -23,7 +23,7 @@ const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
       { fontsLoaded ? <Players /> : <Loading /> }
     </ThemeProvider>
   );
-}git 
+}
 
 
 

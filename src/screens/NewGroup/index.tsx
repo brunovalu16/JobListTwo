@@ -12,7 +12,7 @@ export function NewGroup() {
             <Content />
             <Icon name="file-tray-stacked-outline" />
             <Highlight title="Crie uma nova semana" subtitle="e adicione suas tarefas diárias para essa semana" />
-            <Input />
+            <Input placeholder="ex.: Semana de 01 a 07/00/0000" />
             <Button title="Criar" />
         </Container>
     );

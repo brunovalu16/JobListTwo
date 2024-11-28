@@ -9,7 +9,6 @@ export function Input({...rest}: TextInputProps) {
 
     return (
         <Container
-            placeholder="ex.: Semana de 01 a 07/00/0000"
             placeholderTextColor={COLORS.GRAY_300}
             {...rest}
         />
