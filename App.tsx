@@ -5,6 +5,8 @@ import { useFonts, Roboto_400Regular,Roboto_700Bold } from '@expo-google-fonts/r
 
 import { Groups } from '@screens/Groups';
 import { Loading } from '@components/Loading';
+import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 
 
 export default function App() {
@@ -18,7 +20,7 @@ const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
         backgroundColor="transparent"
         translucent
       />
-      { fontsLoaded ? <Groups /> : <Loading /> }
+      { fontsLoaded ? <Players /> : <Loading /> }
     </ThemeProvider>
   );
 }
@@ -29,5 +31,6 @@ const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
 //OBSERVAÇÕES
 
+//{ fontsLoaded ? <Groups /> : <Loading /> }
 //const [fontsLoaded] - isso é um vetor com apropriedade "fontsLoaded" que verifica se as fonts foram carregadas
 // " ThemeProvider " ele que grencia o uso do theme na aplicação 
