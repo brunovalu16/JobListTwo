@@ -12,6 +12,10 @@ import { Button } from "@components/Button";
 export function Groups() {
     const [ groups, setGroups ] = useState<string[]>([]);
 
+    function handleNewGroups() {
+        
+    }
+
     return(
         <Container>
             <Header showbackButton />
@@ -30,7 +34,11 @@ export function Groups() {
                 message='Adicione suas tarefas semanais aqui.'
              />)}
             />
-            <Button title='Criar nova Agenda' type="PRIMARY" />
+            <Button
+                title='Criar nova Agenda'
+                type="PRIMARY"
+                onPress={handleNewGroups}
+            />
         </Container>
     )
 }
